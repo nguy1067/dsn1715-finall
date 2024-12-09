@@ -1,0 +1,158 @@
+
+
+/*# sourceMappingURL=custom.css.map */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Teko:wght@300;400;500&display=swap' );
+
+/* Set custom variables here */
+
+:root {
+  --primary: #ffffff;
+  --light: #c4c4c4;
+
+  --bs-primary: #ffffff;
+
+  --bs-light: #c4c4c4;
+}
+
+.btn-primary {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #000000;
+
+  --bs-btn-hover-color: #d2d2d2;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #000000;
+
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #000000;
+}
+
+.btn-secondary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #000000;
+  --bs-btn-border-color: #000000;
+
+  --bs-btn-hover-color: #d2d2d2;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #000000;
+
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #000000;
+}
+
+
+.accordion-button:hover,
+.accordion-collapse:target {
+  background-color: #ffffff; 
+  color: black; /* Change text color */
+}
+
+
+
+.hero {
+  background-image: url('your-image-url.jpg');
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+
+.navbar-brand {
+  color: #000000;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Teko', sans-serif;
+}
+
+span {
+  font-family: 'Teko', sans-serif;
+}
+
+/* Hide individual dates on small screens */
+.timeline-item {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+      display: none;
+  }
+  .timeline-item.mobile-link {
+      display: block;
+      font-size: 1rem;
+      color: #00548D;
+      cursor: pointer;
+  }
+}
+
+
+/* publications */
+@media (max-width: 768px) {
+  .timeline-header {
+      border: none; /* Remove line for smaller screens */
+  }
+  .timeline-item {
+      font-size: 0.9rem; /* Adjust font size for readability */
+  }
+}
+
+
+/* homepage */
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin: 0; /* No margins */
+  display: block;
+}
+
+/* Adjust image position on desktop */
+@media (min-width: 1024px) {
+  .image-container {
+    padding-right: 0; /* Remove right padding */
+    padding-left: 5vw; /* Adjust left padding to move the image close to the edge */
+  }
+.text-container {
+  padding-left: 4rem; /* Adjust padding as needed to maintain margin */
+}
+}
+
+/* Add padding to the text container on mobile */
+@media (max-width: 768px) {
+  .text-container {
+    padding: 0 2rem; /* Add horizontal padding for mobile view */
+  }
+}
+
+
+.edit-text {
+  position: absolute;
+  top: 155px; /* Increase this to move it further down */
+  left: 37.5%;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+}
+
+.edit-this-page{
+position: absolute;
+  top: 70px; /* Increase this to move it further down */
+  left: 0.5%;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.2rem;
+}
